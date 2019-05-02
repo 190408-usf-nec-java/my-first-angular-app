@@ -1,0 +1,16 @@
+<h2>* Structural Directives</h2>
+
+<input type="text" [(ngModel)]="inputData">
+<input type="submit" (click)="submit()">
+
+<ol>
+  <!-- *ngFor - Iteratively creates DOM elements
+    from a list/array/collection  -->
+  <li *ngFor="let item of list">{{item}}</li>
+</ol>
+
+<!-- *ngIf - Adds/Removes something from the DOM
+    based on an expression -->
+<p *ngIf="inputOdd()">Input length is odd</p>
+
+<!-- *ngSwitch - Switch structure in the template -->

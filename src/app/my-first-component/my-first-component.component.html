@@ -1,0 +1,20 @@
+<div>
+    <!-- Data Binding -->
+    <!-- Interpolation (or one-way data binding) -->
+    <!-- {{data}} -->
+    <h1>{{componentName}}</h1>
+
+    <!-- Property Binding [property]="expression" -->
+    <!-- Event Binding (event)="expression" -->
+    <div class="block" (click)="toggleMyBoolean()" [class.active]="myBoolean">Hello</div>
+
+    <p>{{data}}</p>
+
+    <!-- 2-way data-binding [(ngModel)]="field" -->
+    <input type="text" [(ngModel)]="data">
+
+    <input type="submit" [disabled]="!valid()">
+    <!-- Banana in a box syntax -->
+
+    <app-my-second-component></app-my-second-component>
+</div>
